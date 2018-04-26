@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <system.diagnostics>
+        <sources>
+            <!-- En esta sección se define la configuración del registro para My.Application.Log -->
+            <source name="DefaultSource" switchName="DefaultSwitch">
+                <listeners>
+                    <add name="FileLog"/>
+                    <!-- Quite los comentarios de la sección posterior para escribir en el registro de eventos de la aplicación -->
+                    <!--<add name="EventLog"/>-->
+                </listeners>
+            </source>
+        </sources>
+        <switches>
+            <add name="DefaultSwitch" value="Information"/>
+        </switches>
+        <sharedListeners>
+            <add name="FileLog" type="Microsoft.VisualBasic.Logging.FileLogTraceListener, Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" initializeData="FileLogWriter"/>
+            <!-- Quite los comentarios de la sección posterior y reemplace APPLICATION_NAME con el nombre de su aplicación para escribir en el registro de eventos de la aplicación -->
+            <!--<add name="EventLog" type="System.Diagnostics.EventLogTraceListener" initializeData="APPLICATION_NAME"/> -->
+        </sharedListeners>
+    </system.diagnostics>
+<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/></startup>
+  <appSettings>
+
+    <!-- SAMURAI 
+    <add key="LimiteServo0" value="82;162" />
+    <add key="LimiteServo1" value="47;96" />
+    <add key="LimiteServo2" value="69;179" />
+    <add key="LimiteServo3" value="35;136" />
+    <add key="LimiteServo4" value="0;125" />
+    <add key="LimiteServo5" value="13;82" />
+    <add key="LimiteServo6" value="18;93" />
+    <add key="LimiteServo7" value="51;111" />
+    <add key="LimiteServo8" value="31;172" />
+    <add key="LimiteServo9" value="63;140" />
+    <add key="LimiteServo10" value="10;129" />
+    <add key="LimiteServo11" value="86;159" />
+    <add key="LimiteServo12" value="50;110" />
+    <add key="LimiteServo13" value="0;179" />
+    <add key="LimiteServo14" value="24;162" />
+    <add key="LimiteServo15" value="0;179" />
+    <add key="LimiteServo16" value="0;136" />
+    <add key="LimiteServo17" value="0;179" />
+    <add key="LimiteServo18" value="37;172" />
+    <add key="LimiteServo19" value="0;179" />
+    <add key="LimiteServo20" value="24;164" />
+    <add key="LimiteServo21" value="75;104" />
+    <add key="LimiteServo22" value="122;145" />
+
+    <add key="PosInicialServo0" value="133" />
+    <add key="PosInicialServo1" value="73" />
+    <add key="PosInicialServo2" value="79" />
+    <add key="PosInicialServo3" value="124" />
+    <add key="PosInicialServo4" value="113" />
+    <add key="PosInicialServo5" value="82" />
+    <add key="PosInicialServo6" value="89" />
+    <add key="PosInicialServo7" value="88" />
+    <add key="PosInicialServo8" value="108" />
+    <add key="PosInicialServo9" value="75" />
+    <add key="PosInicialServo10" value="54" />
+    <add key="PosInicialServo11" value="95" />
+    <add key="PosInicialServo12" value="81" />
+    <add key="PosInicialServo13" value="174" />
+    <add key="PosInicialServo14" value="132" />
+    <add key="PosInicialServo15" value="86" />
+    <add key="PosInicialServo16" value="99" />
+    <add key="PosInicialServo17" value="19" />
+    <add key="PosInicialServo18" value="60" />
+    <add key="PosInicialServo19" value="86" />
+    <add key="PosInicialServo20" value="56" />
+    <add key="PosInicialServo21" value="91" />
+    <add key="PosInicialServo22" value="133" />
+
+    <add key="ImagenRobot" value="\Imagenes\Robot.bmp" />
+    -->
+
+    <add key="LimiteServo0" value="82;162" />
+    <add key="LimiteServo1" value="47;96" />
+    <add key="LimiteServo2" value="69;179" />
+    <add key="LimiteServo3" value="35;136" />
+    <add key="LimiteServo4" value="0;125" />
+    <add key="LimiteServo5" value="13;82" />
+    <add key="LimiteServo6" value="18;93" />
+    <add key="LimiteServo7" value="51;111" />
+    <add key="LimiteServo8" value="31;172" />
+    <add key="LimiteServo9" value="63;140" />
+    <add key="LimiteServo10" value="10;129" />
+    <add key="LimiteServo11" value="86;159" />
+    <add key="LimiteServo12" value="50;110" />
+    <add key="LimiteServo13" value="0;179" />
+    <add key="LimiteServo14" value="24;162" />
+    <add key="LimiteServo15" value="0;179" />
+    <add key="LimiteServo16" value="0;136" />
+    <add key="LimiteServo17" value="0;179" />
+    <add key="LimiteServo18" value="37;172" />
+    <add key="LimiteServo19" value="0;179" />
+    <add key="LimiteServo20" value="24;164" />
+    <add key="LimiteServo21" value="75;104" />
+    <add key="LimiteServo22" value="122;145" />
+
+    <add key="PosInicialServo0" value="133" />
+    <add key="PosInicialServo1" value="73" />
+    <add key="PosInicialServo2" value="79" />
+    <add key="PosInicialServo3" value="124" />
+    <add key="PosInicialServo4" value="113" />
+    <add key="PosInicialServo5" value="82" />
+    <add key="PosInicialServo6" value="89" />
+    <add key="PosInicialServo7" value="88" />
+    <add key="PosInicialServo8" value="108" />
+    <add key="PosInicialServo9" value="75" />
+    <add key="PosInicialServo10" value="54" />
+    <add key="PosInicialServo11" value="95" />
+    <add key="PosInicialServo12" value="81" />
+    <add key="PosInicialServo13" value="174" />
+    <add key="PosInicialServo14" value="132" />
+    <add key="PosInicialServo15" value="86" />
+    <add key="PosInicialServo16" value="99" />
+    <add key="PosInicialServo17" value="19" />
+    <add key="PosInicialServo18" value="60" />
+    <add key="PosInicialServo19" value="86" />
+    <add key="PosInicialServo20" value="56" />
+    <add key="PosInicialServo21" value="91" />
+    <add key="PosInicialServo22" value="133" />
+
+    <add key="ImagenRobot" value="\Imagenes\Robot.bmp" />
+
+  </appSettings>
+</configuration>

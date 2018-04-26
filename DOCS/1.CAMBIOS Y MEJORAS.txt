@@ -1,0 +1,4 @@
+
+REALIZADOS
+- Boton de importar/Exportar con movimientos relativos sobre la posición inicial
+- Al cerrar la edición y grabar, recalcular todos los CRC

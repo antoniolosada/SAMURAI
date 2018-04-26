@@ -1,0 +1,36 @@
+Samurai 
+Conectamos arduino al ordenador
+arrancamos aplicación
+cargamos la secuencia
+Conectar con arduino "O"
+Pulsamos stop y reser "O" y "Rs"
+Cargar secuencia "Cargar"
+Enviar toda la secuencia "Todo>>"
+Colocarse en el primer movimiento
+Encender Robot
+Cargar el video "CHARLI_Robot_Gangnam_Style(descargaryoutube.com).mp4" si se quiere video o el mp3 si solo se quiere música
+Pulsar play en el video
+2 segundos después pulsar el botón de arranque de secuencia ">"
+
+Samurai
+Puerto 41 en ordenador casa
+Puerto 3 portatil lenovo
+
+
+
+Hadron
+Conectamos arduino al ordenador
+arrancamos aplicación
+cargamos la secuencia
+Conectar con arduino "O"
+Pulsamos stop y reser "O" y "Rs"
+Cargar secuencia "Cargar"
+Enviar toda la secuencia "Todo>>"
+Colocarse en el primer movimiento
+Encender Robot
+Cargar el video "CHARLI_Robot_Gangnam_Style(descargaryoutube.com).mp4" si se quiere video o el mp3 si solo se quiere música
+Pulsar el botón ">" de arranque de secuencia
+pasar inmediaramente a la aplicaicón con Alt-Tab y pulsar Espacio para que arranque el video
+
+Hadron
+Puerto 4 portatil lenovo
